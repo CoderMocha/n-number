@@ -1,2 +1,2 @@
 # n-number
-A Digital processing plugin for Nelumbo.
+A Digital processing plugin for Nelumbo!!!
