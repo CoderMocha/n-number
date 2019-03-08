@@ -1,5 +1,7 @@
+const numFormat = require('./_format');
 const numToRoman = require('./_roman');
 
 module.exports = {
-  numToRoman
+  numFormat,
+  numToRoman,
 };

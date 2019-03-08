@@ -1,20 +1,22 @@
 const util = require('./_util');
 
-module.exports = function numToRoman(param) {
-  const _ = util.paramHandler(param);
+module.exports = function numToRoman(num) {
+  const _ = util.paramHandler(num);
   let result;
   switch (_.t) {
     case 'num': {
-      result = execution(_.p);break;
+      result = execution(_.p);
+      break;
     }
     case 'arr': {
       result = [];
       _.p.forEach(item => {
-        result.push(item==='err'?'NAN':execution(item));
+        result.push(item === 'err' ? 'NAN' : execution(item));
       });
       break;
     }
-    default: result = 'NAN'
+    default:
+      result = 'NAN';
   }
   return result;
 };

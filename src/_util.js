@@ -21,7 +21,7 @@ module.exports = {
         param.forEach((item) => {
           if (typeof param === 'number') {
             arr.push(parseInt(item));
-          } else if(!isNaN(Number(item))) {
+          } else if (!isNaN(Number(item))) {
             arr.push(parseInt(item));
           } else {
             arr.push('err');
@@ -35,5 +35,8 @@ module.exports = {
       }
     }
     return _;
+  },
+  isEmpty(p) {
+    return p === null || p === undefined;
   }
 };
