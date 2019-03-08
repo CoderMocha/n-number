@@ -10,7 +10,7 @@ or Using yarn
 $ yarn add n-number
 ```
 # Example
-### numFormat(param, dec)
+### numFormat(num, dec)
 Number format,this method return formatted number like '1,000.00'.
 
 |param|type|default|description|
@@ -40,7 +40,7 @@ Number format,this method return formatted number like '1,000.00'.
  
  numFormat(undefined, 2); // NAN
  ```
-### numToRoman(param) 
+### numToRoman(num) 
 Number to Roman numerals,this method return a Roman numerals like 'IV'.
 
 |param|type|default|description|
