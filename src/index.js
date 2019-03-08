@@ -1,1 +1,5 @@
-export {default as numToRoman} from './_roman';
+const numToRoman = require('./_roman');
+
+module.exports = {
+  numToRoman
+};

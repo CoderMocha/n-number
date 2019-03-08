@@ -1,4 +1,25 @@
-export default numToRoman = (num) => {
+const util = require('./_util');
+
+module.exports = function numToRoman(param) {
+  const _ = util.paramHandler(param);
+  let result;
+  switch (_.t) {
+    case 'num': {
+      result = execution(_.p);break;
+    }
+    case 'arr': {
+      result = [];
+      _.p.forEach(item => {
+        result.push(item==='err'?'NAN':execution(item));
+      });
+      break;
+    }
+    default: result = 'NAN'
+  }
+  return result;
+};
+
+function execution(num) {
   let ans = "";
   const k = Math.floor(num / 1000);
   const h = Math.floor((num % 1000) / 100);
