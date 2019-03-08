@@ -15,7 +15,7 @@ Number format,this method return formatted number like '1,000.00'.
 
 |param|type|default|description|
 |-----|----|-------|-----------|
-|num|Number/String/Array\<Number\>|--|`param` is a `Number`, a `String` can be converted into numbers or a `Array`|
+|num|Number/String/Array\<Number\>|--|`num` is a `Number`, a `String` can be converted into numbers or a `Array`|
 |dec|Number|0|`dec` is number of digits reserved after decimal point.|
  ```ecmascript 6
  const {numFormat} from 'n-number';
@@ -45,7 +45,7 @@ Number to Roman numerals,this method return a Roman numerals like 'IV'.
 
 |param|type|default|description|
 |-----|----|-------|-----------|
-|num|Number/String/Array\<Number\>|--|`param` is a `Number`, a `String` can be converted into numbers or a `Array`|
+|num|Number/String/Array\<Number\>|--|`num` is a `Number`, a `String` can be converted into numbers or a `Array`|
 ```ecmascript 6
 const {numToRoman} from 'n-number';
 
